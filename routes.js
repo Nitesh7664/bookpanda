@@ -72,8 +72,12 @@ router.get('/login', (req, res) => {
 router.post('/login', (req, res) => {
     if(!req.body.loginId){
         User.findOne({email: req.body.email}).then((data) => {
-            res.setHeader('Set-Cookie', 'loginId=' + data._id);
-            res.redirect('content');
+            if(data){
+                res.setHeader('Set-Cookie', 'loginId=' + data._id);
+                res.redirect('content');
+            }else{
+                res.redirect('/register');
+            }
         }).catch((err) => {
             console.log(err);
         });
