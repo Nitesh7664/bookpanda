@@ -9,7 +9,7 @@ const multer = require('multer');
 const PORT = process.env.PORT || 3000;
 
 
-mongoose.connect('mongodb://localhost/bookpanda', { useNewUrlParser: true});
+mongoose.connect('mongodb+srv://nitesh:nitesh7664@bookpanda-ezavk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true});
 const db = mongoose.connection;
 db.once('open', () => {
     console.log('connection made successfully');
