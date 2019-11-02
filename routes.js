@@ -6,7 +6,7 @@ const User = require('./model/user');
 const mongoose = require('mongoose');
 
 
-router.get('/home', (req, res) => {
+router.get('/', (req, res) => {
     res.render('index' ,{
         loginId: req.cookies.loginId
     });
