@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: black;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    color: #fff;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    min-height: 90px;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1em;
+}
+.panda{
+    color: #000;;
+}
+.nav-list{
+    width: 50%;
+}
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul{
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.nav ul li{
+    list-style: none;
+}
+a:hover{
+    color: #00c6a7;
+    font-weight: 600;
+}
+@media screen and (max-width: 700px){
+    .nav{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .nav ul{
+        justify-content: space-between;
+    }
+}
+
+
+
+/* ---------header-content------------ */
+.content{
+    text-align: center;
+    margin: 3em;
+    margin-top: 7em;
+}
+
+.content h1{
+    font-size: 4rem;
+}
+.content p{
+    color: darkblue;
+    font-weight: 600;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7em 1.2em;;
+    border: none;
+    outline: none;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin: 2em;
+}
+.btn-signup{
+    margin-left: 0em;
+}
+.btn:hover{
+   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
+}
+
+/* **********age-group********* */
+
+.age-group{
+    margin: 3em auto;
+    margin-bottom: 0;
+    align-items: center;
+    /* background: linear-gradient(#fff, #666); */
+    background: #666;
+    padding: 1em;
+}
+
+.h1-edit{
+    width: 50%;
+    margin: 1em auto;
+    /* margin-top: 2em; */
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background: #888;
+}
+
+.age-content{
+    padding: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.agecon{
+    height: 60vh;
+    width: 25%;
+    position: relative;
+}
+@media screen and (max-width: 700px){
+    .age-content{
+        flex-direction: column;
+    }
+    .agecon{
+        width: 75%;
+        margin: 1em auto;
+    }
+}
+.agecon img{
+    width: 100%;
+    height: 100%;
+}
+.agecon a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.agecon:hover .btn-age{
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    opacity: 1;
+}
+
+
+
+.something{
+    width: 100%;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    overflow: hidden;
+}
+.something .h1-edit{
+    display: inline-block;
+    width: 50%;
+    margin: 1em 50%;
+    transform: translateX(-50%);
+    padding: 0.5em;
+}
+.selling-book{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.something .selling{
+    width: 15%;
+    height: 40vh;
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 700px){
+    .selling-book{
+        flex-direction: column;
+    }
+    .something .selling{
+        width: 60%;
+        margin: 1em auto;
+    }
+    .something{
+        overflow: visible;
+    }
+}
+.something .selling:hover{
+    border: 30px solid rgba(0,0,0,0.5);
+}
+.something .selling img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.brown{
+    background: burlywood;
+    height: 10vh;
+}
+
+
+.offers{
+    margin-top: 0;
+    background: burlywood;
+}
+
+
+.offer-list{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em auto;
+}
+
+.offers .h1-edit{
+    margin-top: 0;
+    background: brown;
+    color: #fff;
+}
+.offer{
+    height: 300px;
+    width: 300px;
+    border: 20px solid green;
+    border-radius: 50%;
+    background: lightgreen;
+    position: relative;
+    margin: 1em;
+    transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 700px){
+    .offer-list{
+        flex-direction: column;
+    }
+    .offer{
+        margin: 1em auto;
+    }
+}
+.offer:hover{
+    transform: rotateY(360rad);
+}
+.offer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.offers{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+
+/* ----------footer--------- */
+
+.footer{
+    display: flex;
+    background: darkslategrey;
+    width: 100%;
+    min-height: 300px;
+    /* margin-top: 20px; */
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.footer .panda{
+    color: #fff;
+}
+.footer li{
+    color: #000;
+    list-style: none;
+}
+.footer li:hover{
+    color: #fff;
+}
+.main-footer{
+    background: #222;
+    color: #aaa;
+    height: 30px;
+}
+.main-footer p{
+    text-align: center;
+}
+@media screen and (max-width: 700px){
+    .footer{
+        flex-direction: column;
+        padding: 1em auto;
+    }
+}
+
+

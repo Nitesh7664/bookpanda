@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product</title>
+    <link rel="stylesheet" href="/product.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">book<span class="panda">panda</span></div>
+        <div class="nav-list">
+            <ul>
+                <a href="/home" class="current"><li>Home</li></a>
+                <a href="/about"><li>about</li></a>
+                <a href="/addproduct"><li>add product</li></a>
+                <a href="/favorites"><li>favorites</li></a>
+                <a href="/cart"><li>cart</li></a>
+                <a href="/logout"><li>logOut</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- -----------product-------- -->
+    <div class="main">
+            <div class="product-main">
+                    <div class="header"><h1>About product</h1></div>
+                    <div class="prod">
+            
+                        <div class="product-upper">
+                            <div class="image">
+                                <img src='\<%= product.path %>' alt="panda">
+                            </div>
+                            <div class="about">
+                                <h1><%= product.title %></h1>
+                                <p>price: <span class="price"><%= product.price %></span></p>
+                                <p>subject: <span class="subject"><%= product.subject %></span></p>
+                            </div>
+                        </div>
+                        <div class="product-lower">
+                            <h3>description:</h3>
+                            <p><%= product.description %></p>
+                            <div class="addto">
+                                <a href="/addtocart/<%=product._id %>" class="add" onclick="alert(<h2>'product added to the cart'</h2>)">add to cart</a>
+                                <a href="/addtofavorites/<%=product._id %>" class="add" onclick="alert(<h2>'product added to the favorites'</h2>)">add to favorites</a>
+                                <a href="/buynow/<%=product._id %>" class="add" onclick="alert(<h2>'product successfully buyed by you'</h2>)">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    
+
+    <!-- ----------footer----------- -->
+
+    <div class="footer">
+        <div class="cities">
+            <h1>book<span class="panda">panda</span> in cities</h1>
+            <ul>
+                <li>Mumbai</li>
+                <li>Chennai</li>
+                <li>Delhi</li>
+                <li>Palghar</li>
+                <li>gorakhpur</li>
+                <li>Deoria</li>
+                <li>New york</li>
+                <li>new Mumbai</li>
+            </ul>
+        </div>
+        <div class="stream">
+            <h1>book<span class="panda">panda</span> in streams</h1>
+            <ul>
+                <li>Information Technology</li>
+                <li>Computer Science</li>
+                <li>Arts</li>
+                <li>Commerce</li>
+                <li>literature</li>
+                <li>Law</li>
+                <li>History</li>
+                <li>Ethical hacking</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>twitter</li>
+                <li>youtube</li>
+                <li>github</li>
+                <li>linkedIn</li>
+                <li>snaptube</li>
+                <li>Tiktok</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-footer">
+        <p>&copy; bookpanda pvt. limited</p>
+    </div>
+
+</body>
+</html>

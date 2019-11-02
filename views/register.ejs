@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+        <div class="nav">
+                <div class="logo">book<span class="panda">panda</span></div>
+                <div class="nav-list">
+                    <ul>
+                        <a href="/home" class="current"><li>Home</li></a>
+                        <a href="/about"><li>about</li></a>
+                        <a href="/register"><li>sign up</li></a>
+                        <a href="/login"><li>login</li></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- ---------login-form--------- -->
+            <div class="main">
+                    <div class="login-form">
+                            <form onsubmit="return validate()" action="/register" method="POST">
+                                <h1>Register</h1>
+                                <p>Firstname</p>
+                                <input type="text" name="fname" id="fname">
+                                <p>lastname</p>
+                                <input type="text" name="lname" id="lname">
+                                <p>Email</p>
+                                <input type="email" name="email" id="email">
+                                <p>password</p>
+                                <input type="password" name="password" id="password">
+                                <p>confirm password</p>
+                                <input type="password" name="confirmpass" id="confirmpass">
+                                <a href="/register"><button type="submit">Register</button></a>
+                                <a href="/login"><button type="submit">Login</button></a>
+                                
+                                
+                            </form>
+                        </div>
+            </div>
+            
+            <div class="footer">
+                    <div class="cities">
+                        <h1>book<span class="panda">panda</span> in cities</h1>
+                        <ul>
+                            <li>Mumbai</li>
+                            <li>Chennai</li>
+                            <li>Delhi</li>
+                            <li>Palghar</li>
+                            <li>gorakhpur</li>
+                            <li>Deoria</li>
+                            <li>New york</li>
+                            <li>new Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="stream">
+                        <h1>book<span class="panda">panda</span> in streams</h1>
+                        <ul>
+                            <li>Information Technology</li>
+                            <li>Computer Science</li>
+                            <li>Arts</li>
+                            <li>Commerce</li>
+                            <li>literature</li>
+                            <li>Law</li>
+                            <li>History</li>
+                            <li>Ethical hacking</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h1>Contact us</h1>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>twitter</li>
+                            <li>youtube</li>
+                            <li>github</li>
+                            <li>linkedIn</li>
+                            <li>snaptube</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <p>&copy; bookpanda pvt. limited</p>
+                </div>
+
+                <!-- -------------validation--------------- -->
+                <script>
+                    var fname = document.getElementById('fname').value;
+                    var lname = document.getElementById('lname').value;
+                    var email = document.getElementById('email').value;
+                    var password = document.getElementById('password').value;
+                    var confirmpass = document.getElementById('confirmpass').value;
+                    function validate(){
+                        
+                        if(fname.trim() == ""){
+                            alert(<h2>"fname field cannot be empty"</h2>);
+                            return false;
+                        }else if(lname.trim() == ""){
+                            alert(<h2>"lname field cannot be empty"</h2>);
+                            return false;
+                        }else if(email.trim() == ""){
+                            alert(<h2>"Email field cannot be empty"</h2>);
+                            return false;
+                        }else if(password.trim() == ""){
+                            alert(<h2>"password field cannot be empty"</h2>);
+                            return false;        
+                        }else if(confirmpass.trim() == ""){
+                            alert(<h2>"confirm password field cannot be empty"</h2>);
+                            return false;        
+                        }else if(confirmpass.trim() != password.trim()){
+                            alert(<h2 style="color: red;">"password does not match"</h2>)
+                        }   else{
+                        return true;
+                        }
+                    }    
+                    </script>
+                
+</body>
+</html>
+
+
+74996 78475

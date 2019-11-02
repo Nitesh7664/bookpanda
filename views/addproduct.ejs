@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>addproduct</title>
+    <link rel="stylesheet" href="/addproduct.css">
+</head>
+<body>
+        <div class="nav">
+                <div class="logo">book<span class="panda">panda</span></div>
+                <div class="nav-list">
+                    <ul>
+                        <a href="/home" class="current"><li>Home</li></a>
+                        <a href="/about"><li>about</li></a>
+                        <a href="/addproduct"><li>add product</li></a>
+                        <a href="/favorites"><li>favorites</li></a>
+                        <a href="/cart"><li>cart</li></a>
+                        <a href="/logout"><li>logOut</li></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- ---------login-form--------- -->
+            <div class="main">
+                    <div class="login-form">
+                            <form action="/addproduct" method="POST" enctype="multipart/form-data">
+                                <h1>Add product</h1>
+                                <p>Title</p>
+                                <input type="text" name="title" id="title">
+                                <p>Price</p>
+                                <input type="text" name="price" id="price">
+                                <p>Section(Kid, Student, Grownup)</p>
+                                <input type="text" name="section" id="section">
+                                <p>Subject</p>
+                                <input type="text" name="subject" id="subject">
+                                <p>Image</p>
+                                <input type="file" name="image" id="image">
+                                <p>Description</p>
+                                <textarea name="description" id="description" cols="65" rows="8"></textarea>
+                                <a href="#"><button>Add product</button></a> 
+                            </form>
+                        </div>
+            </div>
+
+            <div class="footer">
+                    <div class="cities">
+                        <h1>book<span class="panda">panda</span> in cities</h1>
+                        <ul>
+                            <li>Mumbai</li>
+                            <li>Chennai</li>
+                            <li>Delhi</li>
+                            <li>Palghar</li>
+                            <li>gorakhpur</li>
+                            <li>Deoria</li>
+                            <li>New york</li>
+                            <li>new Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="stream">
+                        <h1>book<span class="panda">panda</span> in streams</h1>
+                        <ul>
+                            <li>Information Technology</li>
+                            <li>Computer Science</li>
+                            <li>Arts</li>
+                            <li>Commerce</li>
+                            <li>literature</li>
+                            <li>Law</li>
+                            <li>History</li>
+                            <li>Ethical hacking</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h1>Contact us</h1>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>twitter</li>
+                            <li>youtube</li>
+                            <li>github</li>
+                            <li>linkedIn</li>
+                            <li>snaptube</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <p>&copy; bookpanda pvt. limited</p>
+                </div>
+            
+</body>
+</html>

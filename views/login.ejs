@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+        <div class="nav">
+                <div class="logo">book<span class="panda">panda</span></div>
+                <div class="nav-list">
+                    <ul>
+                        <a href="/home" class="current"><li>Home</li></a>
+                        <a href="/about"><li>about</li></a>
+                        <a href="/register"><li>sign up</li></a>
+                        <a href="/login"><li>login</li></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- ---------login-form--------- -->
+            <div class="main">
+                    <div class="login-form">
+                            <form onsubmit="return validate()" action="/login" method="POST">
+                                <h1>Login</h1>
+                                <% if(registered == 'true'){ %>
+                                <h1 style="color: red;font-size: 1.5rem;">user already exist</h1>
+                                <% } %>
+                                <p>Email</p>
+                                <input type="email" name="email" id="email" value=" <%= data %>" >
+                                <p>password</p>
+                                <input type="password" name="password" id="password">
+                                <a href="#"><button type="submit">Login</button></a>
+                                <a href="#"><button>Register</button></a>
+                                
+                                
+                            </form>
+                        </div>
+            </div>
+            
+            <!-- ---------footer------------>
+            <div class="footer">
+                    <div class="cities">
+                        <h1>book<span class="panda">panda</span> in cities</h1>
+                        <ul>
+                            <li>Mumbai</li>
+                            <li>Chennai</li>
+                            <li>Delhi</li>
+                            <li>Palghar</li>
+                            <li>gorakhpur</li>
+                            <li>Deoria</li>
+                            <li>New york</li>
+                            <li>new Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="stream">
+                        <h1>book<span class="panda">panda</span> in streams</h1>
+                        <ul>
+                            <li>Information Technology</li>
+                            <li>Computer Science</li>
+                            <li>Arts</li>
+                            <li>Commerce</li>
+                            <li>literature</li>
+                            <li>Law</li>
+                            <li>History</li>
+                            <li>Ethical hacking</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h1>Contact us</h1>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>twitter</li>
+                            <li>youtube</li>
+                            <li>github</li>
+                            <li>linkedIn</li>
+                            <li>snaptube</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <p>&copy; bookpanda pvt. limited</p>
+                </div>
+
+
+                <!-- -------------validation--------------- -->
+                <script>
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                function validate(){
+                    if(email.trim() == ""){
+                        alert(<h2>"Email field cannot be empty"</h2>);
+                        return false;
+                    }else if(password.trim() == ""){
+                        alert(<h2>"password field cannot be empty"</h2>);
+                        return false;        
+                    }else{
+                    return true;
+                    }
+                }    
+                </script>
+                
+</body>
+</html>

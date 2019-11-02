@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bookpanda</title>
+    <link rel="stylesheet" href="/content.css">
+</head>
+<body>
+        <div class="nav">
+                <div class="logo">book<span class="panda">panda</span></div>
+                <div class="nav-list">
+                    <ul>
+                        <a href="/home" class="current"><li>Home</li></a>
+                        <a href="/about"><li>about</li></a>
+                        <a href="/addproduct"><li>add product</li></a>
+                        <a href="/favorites"><li>favorites</li></a>
+                        <a href="/cart"><li>cart</li></a>
+                        <a href="/logout"><li>logout</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                    <div class="content-main">
+                            <div class="search-bar">
+                                <div class="form">
+                                    <form action="">
+                                        <input type="text" name="search" id="search"
+                                        placeholder="Enter your search text">
+                                        <button type="submit">search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <% for(let prod of product){ %>
+                                <a href="/product/<%= prod._id %>" class="anchor">
+                                    <div class="result">
+                                        <div class="image">
+                                            <div class="image-content">
+                                                <img src="<%= prod.path %>" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="data">
+                                            <h3><%= prod.title %></h3>
+                                            <p>price: <%= prod.price %></p>
+                                            <p class = "description" >
+                                                <%= prod.description %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <% } %>
+                            </div>
+                        </div>
+            </div>
+            
+
+
+            <!-- -----------footer----------------- -->
+            <div class="footer">
+                    <div class="cities">
+                        <h1>book<span class="panda">panda</span> in cities</h1>
+                        <ul>
+                            <li>Mumbai</li>
+                            <li>Chennai</li>
+                            <li>Delhi</li>
+                            <li>Palghar</li>
+                            <li>gorakhpur</li>
+                            <li>Deoria</li>
+                            <li>New york</li>
+                            <li>new Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="stream">
+                        <h1>book<span class="panda">panda</span> in streams</h1>
+                        <ul>
+                            <li>Information Technology</li>
+                            <li>Computer Science</li>
+                            <li>Arts</li>
+                            <li>Commerce</li>
+                            <li>literature</li>
+                            <li>Law</li>
+                            <li>History</li>
+                            <li>Ethical hacking</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h1>Contact us</h1>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>twitter</li>
+                            <li>youtube</li>
+                            <li>github</li>
+                            <li>linkedIn</li>
+                            <li>snaptube</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <p>&copy; bookpanda pvt. limited</p>
+                </div>
+                
+</body>
+</html>

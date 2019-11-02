@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>about</title>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <!-- -----navbar----- -->
+    
+    <div class="nav">
+            <div class="logo">book<span class="panda">panda</span></div>
+            <div class="nav-list">
+                <ul>
+                    <a href="/home" class="current"><li>Home</li></a>
+                    <a href="/about"><li>about</li></a>
+                    <% if(loginId != 'false'){ %>
+                    <a href="/addproduct"><li>add product</li></a>
+                    <a href="/favorites"><li>favorites</li></a>
+                    <a href="/cart"><li>cart</li></a>
+                    <a href="/logout"><li>logOut</li></a> <% }else{ %>
+                    <a href="/register"><li>sign up</li></a>
+                    <a href="/login"><li>login</li></a> <% } %> 
+                </ul>
+            </div>
+        </div>
+
+        <!-- ----------content--------- -->
+        <div class="about-main">
+            <div class="nitesh about">
+                <div class="image">
+                    <img src="/images/nitesh.jpg" alt="panda">
+                </div>
+                <div class="info">
+                    <h1>Nitesh<span class="panda">panda</span></h1>
+                    <p>Domain: <span class="domain">Web development</span></p>
+                    <p>co-founder of book<span class="panda">panda</span></p>
+                </div>
+            </div>
+            <div class="aniket about">
+                <div class="image">
+                    <img src="/images/aniket.jpeg" alt="panda">
+                </div>
+                <div class="info">
+                    <h1>aniket<span class="panda">panda</span></h1>
+                    <p>Domain: <span class="domain">Web development</span></p>
+                    <p>co-founder of book<span class="panda">panda</span></p>
+                </div>
+            </div>
+            <div class="deepanshu about">
+                <div class="image">
+                    <img src="/images/deepanshu.jpeg" alt="panda">
+                </div>
+                <div class="info">
+                    <h1>deepanshu<span class="panda">panda</span></h1>
+                    <p>Domain <span class="domain">Web development</span></p>
+                    <p>co-founder of book<span class="panda">panda</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------footer----------- -->
+        <div class="footer">
+                <div class="cities">
+                    <h1>book<span class="panda">panda</span> in cities</h1>
+                    <ul>
+                        <li>Mumbai</li>
+                        <li>Chennai</li>
+                        <li>Delhi</li>
+                        <li>Palghar</li>
+                        <li>gorakhpur</li>
+                        <li>Deoria</li>
+                        <li>New york</li>
+                        <li>new Mumbai</li>
+                    </ul>
+                </div>
+                <div class="stream">
+                    <h1>book<span class="panda">panda</span> in streams</h1>
+                    <ul>
+                        <li>Information Technology</li>
+                        <li>Computer Science</li>
+                        <li>Arts</li>
+                        <li>Commerce</li>
+                        <li>literature</li>
+                        <li>Law</li>
+                        <li>History</li>
+                        <li>Ethical hacking</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                        <li>github</li>
+                        <li>linkedIn</li>
+                        <li>snaptube</li>
+                        <li>Tiktok</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-footer">
+                <p>&copy; bookpanda pvt. limited</p>
+            </div>
+        
+    
+</body>
+</html>

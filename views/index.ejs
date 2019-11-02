@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo" id="logo">book<span class="panda">panda</span></div>
+            <div class="nav-list">
+                <ul>
+                    <a href="/home" class="current"><li>Home</li></a>
+                    <a href="/about"><li>about</li></a>
+                    <% if(loginId != 'false'){ %>
+                    <a href="/addproduct"><li>add product</li></a>
+                    <a href="/favorites"><li>favorites</li></a>
+                    <a href="/cart"><li>cart</li></a>
+                    <a href="/logout"><li>logout</li></a> <% }else{ %>
+                    <a href="/register"><li>sign up</li></a>
+                    <a href="/login"><li>login</li></a> <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Welcome to Book<span class="panda">panda</span></h1>
+            <p>search your book, and read like a panda</p>
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn btn-signup">sign up</a>
+        </div>
+    </header>
+    <div class="age-group">
+        <h1 class='h1-edit'>We have books for all age group</h1>
+        <div class="age-content">
+            <div class="kid agecon">
+                <img src="./images/kid.jpg" alt="kid">
+                <a href="#" class="btn btn-age">kids</a>
+            </div>
+            <div class="student agecon"><img src="./images/student.jpg" alt="kid">
+                <a href="#" class="btn btn-age">Student</a></div>
+            <div class="grownups agecon"><img src="./images/grownup.jpg" alt="kid">
+                <a href="#" class="btn btn-age">Grownup</a></div>
+        </div>
+    </div>
+    <div class="something">
+        <h1 class="h1-edit">Best selling books</h1>
+        <div class="selling-book">
+            <div class="selling ">
+                <img src="/images/selling1.jpg" alt="">
+            </div>
+            <div class="selling ">
+                <img src="/images/selling2.jpg" alt="">
+            </div>
+            <div class="selling ">
+                <img src="/images/selling3.jpg" alt="">
+            </div>
+            <div class="selling ">
+                <img src="/images/selling4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="brown"></div>
+    <div class="offers">
+        <h1 class="h1-edit">Offers & Benefits</h1>
+        <div class="offer-list">
+                <div class="offer"><p>
+                        10% off
+                </p></div>
+                <div class="offer"><p>more than 2 lakh books</p></div>
+                <div class="offer"><p>delivery all over India</p></div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------footer----------- -->
+    <div class="footer">
+        <div class="cities">
+            <h1>book<span class="panda">panda</span> in cities</h1>
+            <ul>
+                <li>Mumbai</li>
+                <li>Chennai</li>
+                <li>Delhi</li>
+                <li>Palghar</li>
+                <li>gorakhpur</li>
+                <li>Deoria</li>
+                <li>New york</li>
+                <li>new Mumbai</li>
+            </ul>
+        </div>
+        <div class="stream">
+            <h1>book<span class="panda">panda</span> in streams</h1>
+            <ul>
+                <li>Information Technology</li>
+                <li>Computer Science</li>
+                <li>Arts</li>
+                <li>Commerce</li>
+                <li>literature</li>
+                <li>Law</li>
+                <li>History</li>
+                <li>Ethical hacking</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>twitter</li>
+                <li>youtube</li>
+                <li>github</li>
+                <li>linkedIn</li>
+                <li>snaptube</li>
+                <li>Tiktok</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-footer">
+        <p>&copy; bookpanda pvt. limited</p>
+    </div>
+    
+    
+</body>
+</html>
