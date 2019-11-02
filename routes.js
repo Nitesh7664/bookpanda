@@ -131,7 +131,7 @@ router.get('/about', (req, res) => {
 // ------logout------
 router.get('/logout', (req, res) => { 
     res.setHeader('Set-Cookie', 'loginId=false');
-    res.redirect('/home');
+    res.redirect('/');
 });
 
 
